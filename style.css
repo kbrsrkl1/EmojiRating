@@ -24,11 +24,10 @@ body{
     left: 50%;
     transform: translateX(-50%);
     top: 22%;
-    width: 32px;
+    width: 57px;
     font-size: 200%;
-    height: 33px;
+    height: 57px;
     border-radius: 26px 26px;
-    background-color: yellow;
     display: flex;
     overflow: hidden;
 }
@@ -36,6 +35,7 @@ body{
 .fa-regular{
     margin: 1px;
     transform: translateX(-1px);
+    font-size: 57px;
 }
 
 .rating-container{
