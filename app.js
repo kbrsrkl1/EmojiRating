@@ -1,11 +1,14 @@
 const starsEl = document.querySelectorAll(".fa-star")
+const emojisEl = document.querySelectorAll(".fa-regular") 
+const colorsArray = ["red", "orange" , "lightblue", "lightgreen", "green"]
+
+updateRating(0)
 
 starsEl.forEach((starEl, index) => {
     starEl.addEventListener("click", () => {
         updateRating(index)
     });
 });
-
 
 
 function updateRating(index){
@@ -16,7 +19,14 @@ function updateRating(index){
             starEl.classList.remove("active");
         }
     })
+
+    emojisEl.forEach((emojiEl) => {
+        emojiEl.style.transform = `translateX(-${index * 60}px)`;
+        emojiEl.style.color = colorsArray[index]
+    });
 }
+
+
 
 
 
